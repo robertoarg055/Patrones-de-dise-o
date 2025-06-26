@@ -29,6 +29,5 @@ if __name__ == "__main__":
     ]
     query = CustomerQuery(customers)
     result = query.active().from_country("USA").with_min_spent(1000).get()
-
     for customer in result:
         print(customer)
